@@ -170,24 +170,24 @@ router.post('/meta_wa_callbackurl', async (req, res) => {
                         contact_profile: {
                             addresses: [
                                 {
-                                    city: 'Nairobi',
-                                    country: 'Kenya',
+                                    city: 'Ranchi',
+                                    country: 'India',
                                 },
                             ],
                             name: {
-                                first_name: 'Daggie',
-                                last_name: 'Blanqx',
+                                first_name: 'Dipu',
+                                last_name: 'Singh',
                             },
                             org: {
-                                company: 'Mom-N-Pop Shop',
+                                company: 'Aadrika Enterprises',
                             },
                             phones: [
                                 {
-                                    phone: '+1 (555) 025-3483',
+                                    phone: '+919708846652',
                                 },
-                                {
-                                    phone: '+254 712345678',
-                                },
+                                // {
+                                //     phone: '+254 712345678',
+                                // },
                             ],
                         },
                     });
@@ -320,7 +320,7 @@ router.post('/meta_wa_callbackurl', async (req, res) => {
                     // Send the PDF invoice
                     await Whatsapp.sendDocument({
                         recipientPhone,
-                        caption: `Mom-N-Pop Shop invoice #${recipientName}`,
+                        caption: `Quanta Infotech Shop invoice #${recipientName}`,
                         file_path: `./invoice_${recipientName}.pdf`,
                     });
 
@@ -337,7 +337,7 @@ router.post('/meta_wa_callbackurl', async (req, res) => {
                         latitude: warehouse.latitude,
                         longitude: warehouse.longitude,
                         address: warehouse.address,
-                        name: 'Mom-N-Pop Shop',
+                        name: 'Quanta Infotech',
                     });
                 }
             }

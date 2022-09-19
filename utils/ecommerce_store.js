@@ -12,7 +12,7 @@ module.exports = class EcommerceStore {
                 (error, res, body) => {
                     try {
                         if (error) {
-                            reject(error);
+                            reject("Errro in eccon strore 2",error);
                         } else {
                             resolve({
                                 status: 'success',
@@ -20,7 +20,7 @@ module.exports = class EcommerceStore {
                             });
                         }
                     } catch (error) {
-                        reject(error);
+                        reject("Errro in eccon strore 2",error);
                     }
                 }
             );
